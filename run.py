@@ -1,7 +1,6 @@
 import json
 
 with open('speech.json') as file:
-    speech = json.load(file)
-
+    text = file.read()
 with open('output.txt', 'w') as file:
-    print(speech['raw'], file=file)
+    print(text, file=file)
